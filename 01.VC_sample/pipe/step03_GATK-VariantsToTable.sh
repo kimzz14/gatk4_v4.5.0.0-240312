@@ -15,7 +15,7 @@ gatk --java-options '-Djava.io.tmpdir=./tmp' VariantsToTable \
 -GF GT \
 -GF AD \
 -GF DP \
---variant result/pooled.RGsorted.HaplotypeCaller.all.vcf.gz \
---output  result/pooled.RGsorted.HaplotypeCaller.all.tab \
-1>        result/pooled.RGsorted.HaplotypeCaller.all.tab.log \
-2>        result/pooled.RGsorted.HaplotypeCaller.all.tab.err
+--variant result/pooled.HaplotypeCaller.all.vcf.gz \
+--output  result/pooled.HaplotypeCaller.all.tab \
+1>        result/pooled.HaplotypeCaller.all.tab.log \
+2>        result/pooled.HaplotypeCaller.all.tab.err
