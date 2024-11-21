@@ -1,11 +1,11 @@
 ############################################################################################
 readID=$1
-threadN=$2
+fileExt=$2
 
 ############################################################################################
 
 gatk --java-options "-Djava.io.tmpdir=./tmp" AddOrReplaceReadGroups \
---INPUT                 result/${readID}.bam \
+--INPUT                 result/${readID}.${fileExt} \
 --OUTPUT                result/${readID}.RGsorted.bam \
 --SORT_ORDER            coordinate \
 --MAX_RECORDS_IN_RAM    1280000 \
